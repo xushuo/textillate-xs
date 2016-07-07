@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>932</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+    <h1>
+        <div class="text"><span id="yoy">天云大数据</span></div>
+    </h1>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.lettering.js"></script>
+<script src="js/jquery.textillate.js"></script>
+<script>
+    //$('#yoy').textillate()
+    $(function () {
+        $('#yoy').textillate({
+            // custom set of 'in' effects. This effects whether or not the
+            // character is shown/hidden before or after an animation
+            inEffects: ['fadeInLeftBig'],
+            // 进入动画设置
+            in: {
+                // set the effect name
+                effect: 'fadeInLeftBig',
+                // set the delay factor applied to each consecutive character
+                delayScale: 1.5,
+                // set the delay between each character
+                delay: 500,
+            },
+            // callback that executes once textillate has finished
+            callback: function () {}});
+    })
+</script>
+</body>
+</html>
