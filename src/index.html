@@ -17,17 +17,14 @@
     //$('#yoy').textillate()
     $(function () {
         $('#yoy').textillate({
-            // custom set of 'in' effects. This effects whether or not the
-            // character is shown/hidden before or after an animation
-            inEffects: ['fadeInLeftBig'],
             // 进入动画设置
             in: {
                 // set the effect name
-                effect: 'fadeInLeftBig',
+                effect: 'rotateIn',
                 // set the delay factor applied to each consecutive character
                 delayScale: 1.5,
                 // set the delay between each character
-                delay: 500,
+                delay: 100,
             },
             // callback that executes once textillate has finished
             callback: function () {}});
